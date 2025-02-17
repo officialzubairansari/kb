@@ -1,0 +1,201 @@
+/*------------------------------------------------------------------
+
+Project: Lucha Multipage Template
+Author : The_Krishna
+Primary use:  Restaurants Site Template
+------------------------------------------------------------------/*
+
+/********** Chef List Layout & Chef Detail CSS  **********/
+
+.chef-item{
+	margin: 0 0 60px 0;
+	position: relative;
+}
+.chef-slider .chef-item{
+	margin-bottom: 0;
+}
+.all-chef{
+	padding-bottom: 40px;
+}
+.chef-2-image{
+	border-radius: 0;
+}
+.chef-image-2{
+    position: relative;
+    text-align: left;
+}
+
+.chef-item.layout-2{
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+.chef-image.layout-2 img{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.38);
+    transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3), -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+}
+.chef-item:hover .chef-image.layout-2 img{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.chef-name-designation {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.38);
+    transition: -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transition: transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3), -webkit-transform 0.8s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    border-radius: 100%;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #1D1A25;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.chef-item:hover .chef-name-designation {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.progress-title{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+	color: #1D1A25;
+}
+.skil-progressbar{
+    position: relative;
+    background-color: #D9D9D9;
+    border-radius: 0;
+    height: 2px;
+}
+.skil-progressbar span{
+    height: 4px;
+    background-color: #FEA02F;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.reveal.active .skil-progressbar span{
+    animation: animate-positive 2.5s;
+}
+.progress-value{
+ 	top: 10px;
+    margin-left: -20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-left: -20px;
+    color: #FEA02F;
+}
+.reveal.active .progress-value{
+     animation: animate-counter 2.5s;
+}
+.progresbar-counter{
+    position: relative;
+    margin-bottom: 40px;
+}
+.progresbar-counter:last-child{
+	margin-bottom: 0;
+}
+.profile-social h3{
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.social-share{
+	margin-top: 35px;
+}
+.social-share li{
+	margin: 0 5px;
+}
+.skill_bar{
+	margin-top: 30px;
+}
+@-webkit-keyframes animate-counter{
+    0%{ left: 0; }
+}
+@keyframes animate-counter{
+    0%{ left: 0; }
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+/************************ responsive *****************/
+@media(max-width: 991px){
+	.all-chef {
+	    padding-bottom: 20px;
+	}
+	.profile-content p{
+		text-align: center;
+	}
+	.social-share {
+	    margin-top: 20px;
+	    margin-bottom: 40px;
+	}
+}
+@media(max-width: 767px){
+	.chef-item {
+	    margin: 0 0 30px 0;
+	}
+	.chef-name {
+	    margin: 50px 0 10px 0;
+	}
+    .master-chef .chef-item .chef-name{
+        margin: 25px 0 15px 0;
+    }
+    .master-chef .chef-image .social-ic-link .ic-toggle, .master-chef .chef-image .social-ic-link a{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .master-chef .chef-image .social-ic-link .ic-toggle i, .master-chef .chef-image .social-ic-link li a i{
+        font-size: 22px;
+    }
+	.chef-item.layout-2{
+		margin-bottom: 70px;
+	}
+	.profile-social h3{
+		margin-top: 20px;
+	}
+	.progresbar-counter{
+		margin-bottom: 30px;
+	}
+	.progress-value{
+	    top: 13px;
+    	font-size: 18px;
+   	 	line-height: 18px;
+	}
+}

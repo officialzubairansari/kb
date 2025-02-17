@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+
+Project: Lucha Multipage Template
+Author : The_Krishna
+Primary use:  Restaurants Site Template
+------------------------------------------------------------------/*
+/********** About us Layout CSS  ******* ***/
+.about_images > img {
+    padding: 0;
+}
+.about_images{
+    text-align: right;
+}
+
+@media(max-width: 991px){
+    .about_images{
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media(max-width: 767px){
+    .about_images{
+        text-align: center;
+        margin-top: 30px;
+    }
+}

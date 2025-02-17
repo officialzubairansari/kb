@@ -1,0 +1,1501 @@
+@media(max-width: 1700px){
+	.reservation-section .sticky-stick{
+		left: 100px;
+	}
+}
+
+@media(max-width: 1600px){
+	.header-menu-wrap ul li.nav-item{
+		margin: 0 20px;
+	}
+	.menu-background1{
+		right: -140px;
+	}
+	.menu-background2{
+		left: -100px;
+	}
+	.reservation-section .sticky-stick{
+		left: 90px;
+	}
+	.chef-background{
+		left: -90px;
+	}
+	.testimonial-background{
+		left: -160px;
+	}
+}
+
+@media(max-width: 1500px){
+	.hero-slider .container{
+		min-height: 670px;
+	}
+	.modal-content .btn-close{
+		top: 0;
+	}
+	.header-menu-wrap ul li.nav-item{
+		margin: 0 18px;
+	}
+	.header-menu-wrap .search-icon{
+		margin-right: 40px;
+	}
+	.menu-background1{
+		right: -160px;
+	}
+	.reservation-section .sticky-stick {
+		left: 50px;
+	}
+	.home-page.hero-slider .container{
+		min-height: 100vh;
+	}
+}
+@media(max-width: 1440px){
+	.reservation-section .sticky-stick {
+		left: 20px;
+	}
+	.header-menu-wrap ul li.nav-item{
+		margin: 0 15px;
+	}
+	.header-menu-wrap .search-icon {
+		margin-right: 30px;
+	}
+	.menu-background2 {
+		left: -145px;
+	}
+	.section_padding.services_section{
+		padding: 100px 0 70px 0;
+	}
+	.testimonial-background {
+		left: -220px;
+	}
+}
+@media(max-width: 1375px){
+	.blog-menu-sub.dropdown-menu {
+		min-width: 165px;
+	}
+}
+@media(max-width: 1300px){
+	.blog_audio .player .imgbx {
+		height: 500px;
+	}
+	.header-menu-wrap ul li.nav-item{
+		margin: 0 10px;
+	}
+	.header-menu-wrap .search-icon {
+		margin-right: 20px;
+	}
+	.header-menu-wrap .cart-icon{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.menu-background1 {
+		right: -200px;
+	}
+	.menu-background2 {
+		display: none;
+	}
+	.reservation-section .sticky-stick {
+		left: -50px;
+	}
+	.chef-background {
+		left: -170px;
+	}
+	.testimonial-background {
+		left: -300px;
+	}
+}
+
+@media(max-width: 1230px){
+	.header-menu-wrap ul li.nav-item{
+		margin: 0 8px;
+	}
+	.menu-background1, .chef-background{
+		display: none;
+	}
+	.reservation-section .sticky-stick {
+		left: -100px;
+	}
+}
+
+@media(max-width: 1199px){
+	.footer{
+		padding-bottom: 100px;
+	}
+	h2 {
+		font-size: 54px;
+		line-height: 64px;
+	}
+	.about_images .samll-img:before{
+		top: -20px;
+		left: -20px;
+	}
+	.about_images .samll-img .hover-border-bottom{
+		bottom: -20px;
+		right: 10px;
+	}
+	.reservation-data h2{
+		width: 100%;
+	}
+	.book-reservation .reservation-data{
+		top: 110px;
+	}
+	.book-reservation .hero-overlay{
+		height: calc(100% - 310px);
+	}
+	.reservation-section .sticky-stick{
+		bottom: 50px;
+		left: -150px;
+	}
+	.swiper-testimonials .testimonial-shape{
+		padding: 40px 40px 100px 40px;
+	}
+	.swiper-testimonials .swiper-pagination{
+		bottom: 95px;
+	}
+	
+	.swiper-button-next, .swiper-rtl .swiper-button-prev {
+		right: -10px;
+	}
+	.swiper-button-prev, .swiper-rtl .swiper-button-next {
+		left: -10px;
+	}
+	.swiper-button-next, .swiper-button-prev{
+		top: 220px;
+	}
+	.bg-testimonial{
+		background-size: 100%;
+	}
+	.testimonial-section{
+		padding: 60px 0;
+	}
+	.conatct-detail:nth-child(2){
+		margin-top: 20px;
+	}
+
+	/***** mobile header*******/
+	.cartcount{
+		top: -5px;
+		right: -3px;
+	}
+	.mobile-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 70px;
+		background-color: #ffffff;
+		padding: 12px 15px;
+	}	
+	.mobile-header .header-icons{
+		background-color: #FEA02F;
+		border-radius: 100px;
+		width: 46px;
+		height: 46px;
+		line-height: 44px;
+	}
+	.header-icons i {
+		font-size: 20px;
+		color: #ffffff;
+	}
+	.header-search,
+	.navbar-toggler,
+	.header-top-info,
+	.header-cart{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.navbar-toggler{
+		padding: 0;
+		border: none;
+		margin: 0 0 0 15px;
+		height: auto;
+		width: auto;
+	}
+	.navbar-toggler-icon{
+		height: auto;
+		width: auto;
+	}
+	.navbar-toggler-icon i{
+		font-size: 24px;
+		color: #1D1A25;
+	}
+	.navbar-toggler:focus{
+		box-shadow: none;
+		outline: none;
+	}
+	.navbar-collapse{
+		position: fixed;
+		top: 0;
+		width: 50%;
+		height: 100vh;
+		min-height: 100%;
+		background-color: #1D1A25;
+		text-align: left;
+		overflow-y: auto;
+		visibility: hidden;
+		z-index: 9999;
+		-webkit-backface-visibility: hidden;
+		box-sizing: border-box;
+		box-shadow: -3px 0 3px rgb(0 0 0 / 4%);
+		-webkit-transition: all .3s cubic-bezier(.77,0,.175,1);
+		-moz-transition: all .3s cubic-bezier(.77,0,.175,1);
+		transition: all .3s cubic-bezier(.77,0,.175,1);
+		left: -100%;
+		visibility: visible;
+	}
+	.navbar-collapse.collapse.show{
+		left: 0;
+		visibility: visible;
+	}
+	.navbar-nav{
+		text-align: left;
+		padding: 50px;
+	}
+	li.nav-item {
+		display: block;
+		vertical-align: middle;
+		margin: 0;
+		text-align: left;
+		width: 100%;
+		border-bottom: 1px solid rgb(255 255 255 / 59%);
+	}
+	li.nav-item:last-child{
+		border-bottom: none;
+	}
+	.navbar-nav .nav-link{
+		color: #ffffff;
+		padding: 15px 0!important
+	}
+	.close-menu{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		color: #fff;
+		font-size: 24px;
+	}
+	.nav-item .dropdown-menu{
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		transform: none;
+		position: initial;
+		height: 0;
+		border-radius: 0;
+	}
+	.mobile-header .nav-item .dropdown-menu{
+		opacity: 0;
+	}
+	.nav-item:hover .dropdown-menu{
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+	.nav-item .dropdown-menu.show{
+		height: auto;
+		visibility: visible;
+		opacity: 1;
+	}
+	.dropdown-item{
+		padding: 8px 15px;
+	}
+	.dropdown-toggle::after{
+		position: absolute;
+		right: 0;
+	}
+	.conatct-info-header{
+		padding: 0 50px;
+	}
+	.conatct-info-header h2{    
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgb(255 255 255 / 59%);
+	}
+	.conatct-info-header .header-top-info{
+		margin-bottom: 20px;
+		display: block;
+		font-weight: 400;
+	}
+	.food-img-price img{
+		width: 150px;
+		height: 150px
+	}
+	.contact-us {
+		padding: 50px;
+	}
+	.form-title{
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.main_page .header .mobile-header{
+		background-color: transparent;
+		padding: 0;
+	}
+	.main_page .header .mobile-header .mb-header-left{
+		display: flex;
+		align-items: center;
+	}
+	.main_page .header .mobile-header .mb-header-left .navbar-toggler{
+		margin: 0;
+	}
+	.main_page .header .navbar-toggler-icon i{
+		color: #ffffff;
+	}
+	.main_page .mobile-header .search-icon{
+		background-color: transparent;
+	}
+	.main_page .mobile-header .cart-icon{
+		background-color: transparent;
+		border: 1px solid #FEA02F;
+	}
+	.main_page .mobile-header .cart-icon i{
+		color: #FEA02F;
+	}
+	.main_page .main-header.fixed-header .navbar-toggler-icon i{
+		color: #1D1A25;
+	}
+	.main_page .fixed-header .mobile-header .cart-icon:hover{
+		background-color: #FEA02F;
+	}
+	.main_page .fixed-header .mobile-header .cart-icon:hover i{
+		color: #ffffff;
+	}
+	.main-header.fixed-header .mobile-header .search-icon i{
+		color: #FEA02F;
+	}
+	nav {
+		width: 100%;
+	}
+	#cssmenu {
+		width: 100%;
+	}
+	#cssmenu ul {
+		width: 100%;
+		display: block;    
+	}
+	#cssmenu ul.open-detail-menu{
+		padding: 50px;
+	}
+	#cssmenu ul li {
+		width: 100%;
+		border-bottom: 1px solid rgb(255 255 255 / 59%);
+	}
+	#cssmenu ul li:last-child{
+		border-bottom: none;
+	}
+	#cssmenu ul li:hover {
+		background: #1D1A25;
+	}
+	#cssmenu ul ul li,
+	#cssmenu li:hover > ul > li {
+		height: auto;
+	}
+	#cssmenu ul li a,
+	#cssmenu ul ul li a {
+		width: 100%;
+		border-bottom: 0;    
+	}
+	#cssmenu > ul > li {
+		float: none;
+	}
+	#cssmenu ul ul li a {
+		
+	}
+	ul.open {
+		padding-left: 0;
+	}
+	ul.open li{
+		border-bottom: none !important;
+	}
+	#cssmenu ul ul li {
+		background: #1D1A25 !important;
+	}
+	#cssmenu ul ul li:hover {
+		background: #transparent; !important;
+	}
+	#cssmenu ul ul ul li a {
+
+	}
+	#cssmenu ul ul li a {
+		color: #1D1A25;
+		background: #ffffff;
+	}
+	#cssmenu ul ul li:hover > a,
+	#cssmenu ul ul li.active > a {
+/*    color: #fff;*/
+}
+#cssmenu ul ul,
+#cssmenu ul ul ul {
+	position: relative;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	text-align: left;
+}
+#cssmenu > ul > li.has-sub > a:after,
+#cssmenu > ul > li.has-sub > a:before,
+#cssmenu ul ul > li.has-sub > a:after,
+#cssmenu ul ul > li.has-sub > a:before {
+	display: none;
+}
+#cssmenu #head-mobile {
+	display: block;
+	padding: 23px;
+	color: #ddd;
+	font-size: 12px;
+	font-weight: 700;
+}
+.button {
+	width: 55px;
+	height: 46px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 12399994;
+}
+.button:after {
+	position: absolute;
+	top: 22px;
+	right: 20px;
+	display: block;
+	height: 4px;
+	width: 20px;
+	border-top: 2px solid #dddddd;
+	border-bottom: 2px solid #dddddd;
+	content: "";
+}
+.button:before {
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	display: block;
+	height: 2px;
+	width: 20px;
+	background: #ddd;
+	content: "";
+}
+.button.menu-opened:after {
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	top: 23px;
+	border: 0;
+	height: 2px;
+	width: 19px;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.button.menu-opened:before {
+	top: 23px;
+	background: #fff;
+	width: 19px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#cssmenu .submenu-button {
+	position: absolute;
+	z-index: 99;
+	right: 0;
+	top: 0;
+	display: block;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+}
+#cssmenu .submenu-button.submenu-opened {
+	background: transparent;
+}
+span.submenu-button{
+	width: 100% !important;
+}
+#cssmenu .submenu-button:after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	z-index: 11;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	top: 18px;
+	transform: rotate(225deg);
+}
+#cssmenu ul ul .submenu-button:after {
+	top: 15px;
+	right: 13px;
+}
+#cssmenu .submenu-button.submenu-opened:after {
+	background: transparent;
+}
+#cssmenu ul ul .submenu-button:before {
+	top: 12px;
+	right: 16px;
+}
+#cssmenu .submenu-button.submenu-opened:before {
+	display: none;
+}
+#cssmenu ul ul ul li.active a {
+	border-left: none;
+}
+#cssmenu > ul > li.has-sub > ul > li.active > a,
+#cssmenu > ul ul > li.has-sub > ul > li.active > a {
+	border-top: none;
+}
+}
+@media(max-width: 1199px) and (min-width: 992px){
+	.food_item_desc{
+		padding: 20px 150px 20px 20px;
+	}
+	.odd .food_item_desc{
+		padding: 20px 20px 20px 150px;
+	}
+}
+@media(max-width: 1024px){
+	.layout-3 .layout-2-title a {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.reservation-section .sticky-stick{
+		display: none;
+	}
+	.blog-slider-swipe .blog-info{
+		margin-right: 20px;
+	}
+	.testimonial-background {
+		left: -366px;
+	}
+}
+@media(min-width: 1200px){
+	.odd .food_item_desc{
+		padding: 30px 30px 30px 170px;
+	}
+}
+@media(min-width: 992px){
+	.odd .food-img-price{
+		left: 0;
+		right: auto;
+	}
+	.odd .menu-list-item{
+		padding-left: 30px;
+		padding-right: 0;
+	}
+	.odd .food_item_desc{
+		text-align: right;
+	}
+}
+@media(max-width: 991px){
+	.services_section .service-item{
+		margin-bottom: 0;
+		padding: 20px;
+	}
+	.services_section{
+		padding: 80px 0 50px 0;
+	}
+	.main_page .about-btn.book-btn {
+		margin-top: 40px;
+	}
+	.blog-section.home-blogs {
+		padding: 80px 0;
+	}
+	.services_section .service_desc{
+		padding-top: 16px;
+	}
+	.main_page .about_images{
+		text-align: center;
+		padding-top: 40px;
+	}
+	.section_padding.services_section{
+		padding: 80px 0 80px 0;
+	}
+	.main_page .reservation-section .big-banner{
+		top: 0;
+		height: 668px;
+	}
+	.swiper-testimonials .swiper-pagination{
+		bottom: 510px;
+		left: 30px;
+	}
+	.swiper-testimonials .testimonial-shape{
+		margin-top: 50px;
+		box-shadow: inset 0px 0px 6px 0px rgb(29 26 37 / 10%);
+		padding: 30px 30px 85px 30px;
+	}
+	.swiper-testimonials .client-image{
+		margin-top: 50px;
+	}
+	.swiper-testimonials .testimonial-slider .col-12.col-lg-4{
+		text-align: center;
+	}
+	.testimonial-background{
+		display: none;
+	}
+	.main_page .book-reservation .hero-overlay{
+		top: 0;
+		height: calc(100% - 400px);
+	}
+	.main_page .book-reservation .reservation-data{
+		top: 80px;
+		text-align: center;
+		margin-bottom: 140px;
+	}
+	.food_menu_section .menu-list-item-5{
+		margin-bottom: 30px;
+	}
+	.section_padding.food_menu_section{
+		padding: 80px 0 50px 0;
+	}
+	.menu-nav-item{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		justify-content: initial!important;
+		padding-bottom: 15px;
+		margin-bottom: 40px;
+	}
+	.navbar-collapse{
+		width: 70%;
+	}
+	.chef-item.layout-2{
+		margin-bottom: 80px;
+	}
+	.section_padding{
+		padding: 80px 0;
+	}
+	.custom-field{
+		margin-bottom: 20px;
+		padding: 8px;
+	}
+	.image-tab svg{
+		width: 70px;
+		height: 70px;
+	}
+	.menu-list-detail.menu-nav-item li{
+		margin: 0 20px;
+	}
+	.blog-section {
+		padding: 80px 0 220px 0;
+	}
+	.pb-70{
+		padding-bottom: 50px;
+	}
+	.mt-mobile{
+		margin-top: 40px;
+	}
+	.counter-section{
+		padding: 100px 0 70px 0;
+	}
+	.counter{
+		margin-bottom: 30px;
+	}
+	.menu-nav-item .nav-item {
+		margin: 0 8px;
+	}
+	.item-link{
+		padding: 15px 24px;
+	}
+	.dish-image {
+		width: 140px;
+		height: 140px;
+	}
+	.bg-testimonial{
+		background-size: cover;
+	}
+	.f_price{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.food-img-price{
+		top: -60px;
+	}
+	.food_item_desc{
+		margin-top: 60px;
+		padding-right: 130px;
+	}
+	.blog-top{
+		margin-bottom: 20px;
+	}
+	.blog-title{
+		font-size: 30px;
+	}
+	.newsletter-heading{
+		text-align: center;
+		margin-bottom: 30px!important;
+	}
+	.footer{
+		padding: 0 0 80px 0;
+	}
+	.footer .col-xl-7{
+		order: 2;
+	}
+	.footer .col-xl-5{
+		order: 1;
+	}
+	.open-detail {
+		padding: 30px;
+		position: relative;
+		top: 0; 
+		right: 0; 
+		margin-top: -50px;
+		max-width: 500px;
+		background-size: cover;
+		background-position: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+	.copyright-text{
+		margin-top: 40px;
+		text-align: center;
+	}
+	.modal-content .btn-close {
+		right: -60px;
+	}
+	.search-modal-close{
+		right: 15px;
+	}
+	.page-title.container {
+		min-height: 450px!important;
+	}
+	.menu-nav-item .nav-item {
+		margin: 5px;
+	}
+	.food-img-price img {
+		width: 120px;
+		height: 120px;
+	}
+	.contact-infromation{
+		margin-top: 40px;
+	}
+	.map iframe{
+		height: 500px;
+	}
+	.page-link{
+		width: 50px;
+		height: 50px;
+		line-height: 48px;
+		font-size: 22px;
+	}
+	.book-reservation .book-now h2{
+		font-size: 52px;
+	}
+}
+
+@media(max-width: 768px){
+	.site-sticky-sidebar {
+		display: none;
+	}
+	.blog_audio .player .imgbx {
+		height: 350px;
+	}
+	.slider_shape_img1, .slider_shape_img2{
+		display: none;
+	}
+	.main_page .about-btn.book-btn{
+		margin-top: 40px;
+	}
+	.main_page .book-reservation .reservation-data{
+		top: 60px;
+		margin-bottom: 100px;
+	}
+	.main_page .reservation-section .big-banner{
+		height: 628px;
+	}
+}
+
+@media(max-width: 767px){
+	.blog_section .blog_slider_section{
+		padding: 50px 0 0 0;
+	}
+	.menu-list-detail .nav-item span{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.about-heading{
+		text-align: center;
+		display: block;
+	}
+	.featured_blog h2, .featured_blog > p{
+		text-align: center;
+	}
+	.image-tab svg{
+		width: 60px;
+		height: 60px;
+	}
+	.image-tab{
+		height: 80px;
+	}
+	.menu-list-detail.menu-nav-item li{
+		margin: 0 16px;
+	}
+	.mt-60{
+		margin-top: 30px;
+	}
+	.mb-40 {
+		margin-bottom: 20px;
+	}
+	.bg-testimonial{
+		display: none;
+	}
+	.mobile-header{
+		padding: 12px 0;
+	}
+	.header-top{
+		display: none;
+	}
+	.header{
+		background-color: #ffffff;
+	}
+	.header-bottom{
+		margin-bottom: 0;
+	}
+	.custom-field{
+		margin-bottom: 20px;
+	}
+	.modal-content .btn-close {
+		right: 0;
+		top: -60px;
+	}
+	.modal-dialog {
+		margin: 70px auto;
+		padding: 0 15px;
+	}
+	.left_line, .right_line{
+		width: 50px;
+	}
+	.hero-title{
+		margin: 20px 0 60px 0;
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 70px;
+	}
+	.chef-slider{
+		text-align: center;
+	}
+	.chef-item.layout-2{
+		margin-bottom: 50px;
+	}
+	h2 {
+		font-size: 46px;
+		line-height: 56px;
+	}
+	h3 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.section_heading{
+		margin-bottom: 30px;
+	}
+	.section_padding {
+		padding: 50px 0;
+	}
+	p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.mb-30 {
+		margin-bottom: 10px;
+	}
+	.menu-nav-item {
+		margin-bottom: 36px;
+	}
+	.counter-section {
+		padding: 50px 0 20px 0;
+	}
+	.about-service {
+		padding: 20px 0 0 0;
+	}
+	.hero-slider .container {
+		min-height: 570px;
+	}
+	.c_item{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.about-service li img {
+		margin-right: 15px;
+		width: 80px;
+	}
+	.food_item_desc {
+		margin-top: 50px;
+		padding: 20px 110px 20px 20px;
+		padding-right: 110px;
+	}
+	.menu-list-item{
+		padding-right: 15px;
+	}
+	.food-name {
+		line-height: 20px;
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.f_price {
+		padding: 8px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.food-img-price {
+		top: -50px;
+	}
+	.dish-image {
+		width: 130px;
+		height: 130px;
+	}
+	.pb-70 {
+		padding-bottom: 20px;
+	}
+	.book-now{
+		padding: 50px;
+	}
+	.service-item{
+		padding: 20px 20px;
+		margin-top: 30px;
+	}
+	.readmore-btn{
+		bottom: -35px;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+	}
+	.chef-name {
+		margin: 60px 0 10px 0;
+	}
+	.master-chef .chef-item .chef-name{
+		margin: 25px 0 15px 0;
+	}
+	.swiper-pagination{
+		margin-top: 40px;
+	}
+	.swiper-pagination-bullet{
+		margin: 0 10px!important;
+		width: 8px;
+		height: 8px;
+	}
+	.blog-section {
+		padding: 50px 0 130px 0;
+	}
+	.blog_slider_section {
+		padding: 30px 30px 0 30px;
+		margin-top: -80px;
+	}
+	.swiper-button-next, .swiper-button-prev{
+		display: none;
+	}
+	.blog-item .readmore-btn{
+		right: 10px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		bottom: -30px;
+	}
+	.blog-info{
+		margin-right: 20px;
+	}
+	.blog-info span{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.blog-info span i {
+		font-size: 18px;
+		line-height: 18px;
+		margin-right: 5px;
+	}
+	.blog-title{
+		font-size: 26px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+	.subscribe-btn{
+		margin-left: 20px;
+	}
+	.newsletter-heading{
+		margin-bottom: 20px!important;
+	}
+	.testimonial-section {
+		padding: 30px 0 50px 0;
+	}
+	.testimonial-round{
+		max-width: 100%;
+		border-radius: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	.footer {
+		padding: 0 0 50px 0;
+	}
+	.copyright-text{
+		margin-top: 30px;
+		font-size: 16px;
+	}
+	.gallery-slider {
+		padding: 0 15px;
+	}
+	.gallery-item.odd {
+		margin-top: 15px;
+	}
+	.footer-content-top{
+		display: block;
+		text-align: center;
+	}
+	.social-share{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.footer-desc{
+		font-size: 16px;
+		line-height: 26px;
+		margin: 20px 0;
+		text-align: center;
+	}
+	.conatct-detail{
+		margin-right: 0;
+	}
+	.footer-info{
+		text-align: center;
+	}
+	.about-heading .right_line{
+		display: none;
+	}
+	.item-name{
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.search-form-holder{
+		display: block;
+	}
+
+	.search-label{
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.search-field-holder{
+		width: 87%;
+		float: left;
+		margin: 0;
+	}
+	.search-field{
+		padding: 10px 10px 0 10px;
+	}
+	.searchmodal .modal-content {
+		padding: 0 0;
+	}
+	.page-title.container {
+		min-height: 350px!important;
+	}
+	.page-desc{
+		font-size: 16px;
+	}
+	.pagiantion-div {
+		margin-top: 15px;
+	}
+	.page-item{
+		margin: 4px;
+	}
+	.page-link{
+		height: 40px;
+		width: 40px;
+		font-size: 18px;
+		line-height: 38px;
+	}
+	.contact-us.book-now{
+		padding: 30px;
+	}
+	.form-title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.contact-infromation h2{
+		margin-bottom: 20px;
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.hours-info {
+		margin-top: 30px;
+	}
+	.hours-info ul li{
+		padding: 15px 0;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.hours-info h3 {
+		margin-bottom: 10px;
+	}
+	.location-info h3 {
+		margin-bottom: 20px;
+	}
+	.hours-info p{
+		margin: 10px 0 0 0;
+	}
+	.breadcrumb li{
+		line-height: 22px;
+	}
+	.img-up {
+		top: -35px;
+	}
+	.map iframe{
+		height: 300px;
+	}
+	.video_modal .modal-dialog{
+		max-width: 100%;
+		margin: 0;
+	}
+	.video_modal .modal-body video{
+		width: 100%;
+		height: auto;
+	}
+	.video_modal .modal-content .btn-close{
+		padding: 5px;
+	}
+	.section_padding.food_menu_section{
+		padding: 50px 0 20px 0;
+	}
+	.main_page .book-reservation .reservation-data{
+		top: 40px;
+		margin-bottom: 80px;
+	}
+	.main_page .reservation-section .big-banner {
+		height: 740px;
+	}
+	.section_padding.services_section{
+		padding: 50px 0 ;
+	}
+	.blog-section.home-blogs{
+		padding: 60px 0;
+	}
+	.blog-slider-swipe .blog-item{
+		text-align: center;
+	}
+	.swiper-testimonials .testimonial-shape{
+		padding: 30px 20px 80px 20px;
+	}
+	.swiper-testimonials .swiper-pagination{
+		bottom: 505px;
+		left: 15px;
+	}
+	.swiper-testimonials .client-name{
+		margin: 30px 0 15px 0;
+	}
+	.main-header.fixed-header{
+		padding: 15px;
+	}
+	.main-header{
+		padding: 20px 15px;
+	}
+	.main-header .container-fluid{
+		padding: 0;
+	}
+	.main-header .mb-header-center .navbar-brand 	img{
+		width: 130px;
+		margin-left: 10px;
+	}
+	.book-reservation .book-now h2{
+		font-size: 42px;
+	}
+	.services_section .service-item{
+		padding: 15px;
+	}
+	.main_page .about-btn.book-btn {
+		margin-top: 30px;
+	}
+}
+@media(max-width: 575px){
+	.blog_audio .player .imgbx {
+		height: 250px;
+	}
+	.main_page .reservation-section .big-banner {
+		height: 690px;
+	}
+	.main_page .about_images > img{
+		width: 100%;
+	}
+	.main_page .hero-title{
+		margin: 20px 0 60px 0;
+		font-size: 44px;
+		line-height: 54px;
+	}
+	.navbar-collapse {
+		width: 80%;
+	}
+	.service-title{
+		margin: 25px 0 15px 0;
+	}
+	.swiper-pagination-bullet{
+		width: 8px;
+		height: 8px;
+	}
+	.navbar-toggler{
+		margin: 0 0 0 10px;
+	}
+	.nav-center {
+		padding: 0 0;
+	}
+	.navbar-brand img{
+		width: 120px;
+	}
+	h6{
+		font-size: 18px;
+	}
+	.hero .left_line,.hero .right_line{
+		display: none;
+	}
+	.hero-title {
+		margin: 20px 0 35px 0;
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.book-btn{
+		font-size: 18px;
+		line-height: 18px;
+		padding: 14px 22px;
+	}
+	.about_images > img {
+		padding-right: 60px;
+	}
+	.about_images .samll-img img{
+		width: 200px;
+	}
+	.about_images .samll-img:before {
+		top: -15px;
+		left: -15px;
+	}
+	.about_images .samll-img .hover-border-bottom {
+		bottom: -15px;
+		right: 0;
+	}
+	.left_line, .right_line {
+		width: 30px;
+	}
+	.right_line {
+		margin-left: 10px;
+	}
+	.left_line{
+		margin-right: 10px;
+	}
+	.about-service li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.c_item {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.c_desc{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.about-food{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.book-now {
+		padding: 30px 15px;
+	}
+	.blog_slider_section{
+		padding: 15px 15px 0 15px;
+	}
+	.open-detail{
+		padding: 20px;
+	}
+	.footer-time-detail{
+		padding: 16px 10px;
+	}
+	.footer-time-detail h2{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.schedule li {
+		font-size: 16px;
+		margin-bottom: 15px;
+		line-height: 18px;
+	}
+	.schedule li span{
+		margin-right: 10px;
+	}
+	.footer-time-detail a{
+		font-size: 20px;
+	}
+	.about_images .samll-img{
+		margin-top: -90px;
+		padding-right: 15px;
+	}
+	.f_price{
+		font-size: 18px;
+	}
+	.page_breadcrumb .breadcrumb{
+		padding: 20px 15px;
+	}
+	.img-up {
+		top: -29px;
+	}
+}
+@media(max-width: 420px){
+	.main_page .reservation-section .big-banner {
+		height: 772px;
+	}
+	h2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.dish-image {
+		width: 100px;
+		height: 100px;
+	}
+	.food-img-price {
+		top: -30px;
+	}
+	.food_item_desc {
+		margin-top: 30px;
+		padding: 15px 80px 15px 15px;
+		padding-right: 80px;
+	}
+	.blog-item .readmore-btn {
+		right: 0;
+		width: 40px;
+		height: 40px;
+		line-height: 36px;
+		bottom: -20px;
+	}
+	.blog-item .readmore-btn svg{
+		width: 18px
+	}
+	.navbar-nav{
+		padding: 50px 20px;
+	}
+	.conatct-info-header {
+		padding: 0 20px;
+	}
+	.food-img-price img {
+		width: 80px; 
+		height: 80px;
+	}
+	.hours-info p i{
+		font-size: 20px;
+		margin-right: 10px;
+	}
+}
+@media(max-width: 500px){
+	.main_page .book-reservation .hero-overlay{
+		height: calc(100% - 426px);
+	}
+}
+@media(max-width: 516px) and (min-width: 500px){
+	.main_page .book-reservation .hero-overlay{
+		height: calc(100% - 426px);
+	}
+}
+@media(max-width: 431px){
+	.main_page .book-reservation .hero-overlay {
+		height: calc(100% - 482px);
+	}
+}
+@media(max-width: 420px) and (min-width: 324px){
+	.main_page .book-reservation .hero-overlay{
+		height: calc(100% - 376px);
+	}
+}
+@media(max-width: 376px) and (min-width: 321px){
+	.main_page .book-reservation .hero-overlay{
+		height: calc(100% - 384px);
+	}
+}
+@media(max-width: 375px){
+	.main_page .book-reservation .hero-overlay {
+		height: calc(100% - 406px);
+	}
+	.swiper-testimonials .swiper-pagination {
+		bottom: 480px;
+	}
+}
+@media(max-width: 374px){
+	.navbar-collapse {
+		width: 95%;
+	}
+	.schedule li{
+		line-height: 22px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.schedule li span{
+		display: block;
+	}
+	.book-now {
+		padding: 30px 15px;
+	}
+	h2 {
+		font-size: 36px;
+		line-height: 45px;
+	}
+	.item-link {    
+		font-size: 18px;
+		line-height: 18px;
+		padding: 16px 17px;
+	}
+	.service-title {
+		margin: 15px 0 15px 0;
+	}
+	.schedule {
+		margin-bottom: 20px;
+	}
+	.about_images .samll-img {
+		margin-top: -50px;
+		padding-right: 15px
+	}
+	.about_images .samll-img .hover-border-bottom {
+		right: 0;
+	}
+	.header-top-info i,
+	.navbar-toggler-icon i {
+		font-size: 20px
+	}
+	.mobile-header .header-icons{
+		width: 42px;
+		height: 42px;
+		line-height: 40px;
+	}
+	.navbar-toggler {
+		margin: 0 0 0 5px;
+	}
+	.header-top-info i{
+		margin-right: 5px;
+	}
+	.navbar-brand img {
+		width: 110px;
+	}
+	.contact-us.book-now {
+		padding: 20px 15px 20px 15px;
+	}
+	.contact-infromation h2{
+		font-size: 36px;
+		line-height: 40px;
+	}
+}
+@media(max-width: 360px){
+	.swiper-testimonials .swiper-pagination {
+		bottom: 465px;
+	}
+}
+@media(max-width: 320px){
+	.main_page .book-reservation .hero-overlay {
+		height: calc(100% - 452px);
+	}
+
+	.swiper-testimonials .testimonial-shape{
+		padding: 30px 20px 60px 20px;
+	}
+	.swiper-testimonials .swiper-pagination {
+		bottom: 416px;
+	}
+}

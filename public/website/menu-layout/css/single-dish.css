@@ -1,0 +1,389 @@
+/*------------------------------------------------------------------
+
+Project: Lucha Multipage Template
+Author : The_Krishna
+Primary use:  Restaurants Site Template
+------------------------------------------------------------------/*
+
+/********** Single Dish Layout CSS  **********/
+
+/*related foods*/
+
+.menu-list-item-5{
+	display: block;
+	margin-bottom: 0;
+
+}
+.food-img-price-5 img{
+	border-radius: 20px;
+	width: 100%;
+	height: auto;
+	-moz-transform: rotate(0) scale(1);
+	-ms-transform: rotate(0) scale(1);
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-moz-transition: .3s ease-in-out;
+	-ms-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.menu-list-item-5:hover .food-img-price-5 img{
+	-moz-transform: rotate(10deg) scale(1.2);
+	-ms-transform: rotate(10deg) scale(1.2);
+	-webkit-transform: rotate(10deg) scale(1.2);
+    transform: rotate(10deg) scale(1.2);
+    -moz-transition: .3s ease-in-out;
+	-ms-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.food_item_desc-5 .food-name{
+	float: left;
+	margin-top: 30px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.menu-list-item-5:hover .food-name{
+	color: #FEA02F;
+}
+.food_item_desc-5 .about-food{
+	clear: both;
+}
+.f_price-5{
+	margin-top: 30px;
+	float: right;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+}
+.food-img-price-5{
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.related-food-slider{
+	overflow: hidden;
+}
+
+/************ Multi food image *************/
+.foodthumbsSlider{
+	margin-top: 30px;
+}
+.foodthumbsSlider img{
+	height: 170px;
+	width: 170px;
+	cursor: pointer;
+}
+.food-gallery-slider{
+	overflow: hidden;
+}
+.food_name{
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+.chefname_review,
+.star_review,
+.va_quality {
+	display: flex;
+	align-items: center;
+}
+.chefname_review p{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 18px;
+	color: #616F7D;
+	margin-bottom: 0;
+	margin-right: 30px;
+}
+.chefname_review p span{
+	color: #1D1A25;
+}
+.star_review i{
+	color: #FEA02F;
+	font-size: 20px;
+}
+.total_ratting{
+	font-size: 18px;
+	line-height: 18px;
+	color: #616F7D;
+	display: inline-block;
+	vertical-align: middle;
+}
+.food_content{
+	margin: 40px 0;
+}
+.price{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 48px;
+	color: #FEA02F;
+	margin-bottom: 30px;
+}
+.va_quality{
+	margin-bottom: 40px;
+}
+.va_quality span{
+	font-weight: 600;
+	color: #1D1A25;
+	margin-right: 10px;
+}
+.va_quality form span{
+	height: 60px;
+	width: 40px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	margin: 0;
+	border: 1px solid #616F7D;
+	color: #616F7D;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.va_quality form span:hover{
+	background-color: #1D1A25;
+	color: #ffffff;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+.va_quality form input{
+    margin: 0 -5px;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 1px solid #616F7D;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #616F7D;
+    text-align: center;
+    padding: 0 0;
+    -webkit-appearance: none;
+    background: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1D1A25;
+}
+.add-cart-bnt{
+	margin-left: 40px;
+	font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #1D1A25;
+    padding: 18px 29px;
+    border: 2px solid #FEA02F;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #FEA02F;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.add-cart-bnt:hover{
+	background-color: #1D1A25;
+	color: #ffffff;
+	border-color: #1D1A25;
+}
+.variations p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	color: #616F7D;
+}
+.variations p span,
+.food_share span{
+	font-weight: 500;
+}
+.food_share{
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+.food_detail-tabs{
+	margin: 60px 0;
+}
+.food_detail-tabs ul{
+	margin-bottom: 40px;
+}
+.food_detail-tabs ul li{
+	margin: 0 10px;
+	display: inline-block;
+	width: auto;
+}
+.food_detail-tabs ul li:first-child{
+	margin-left: 0;
+}
+.detail-tabs-button{
+	background-color: #F5F5F5!important;
+	border-radius: 30px!important;
+	padding: 20px 30px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	color: #1D1A25;
+}
+.detail-tabs-button.active,
+.detail-tabs-button:hover {
+	background-color: #1D1A25!important;
+	color: #FEA02F!important;
+}
+.review-ratting {
+	padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 2px rgb(227 227 227 / 61%);
+}
+.review-ratting h4{
+	text-align: center;
+}
+.product-rating{
+	color: #FEA02F;
+}
+.star-count{
+	margin-bottom: 10px;
+}
+.progress{
+	background-color: #f5f5f5
+}
+.progress-bar{
+	color: #1D1A25;
+    background-color: #fea02f;
+}
+.star_rate i:hover{
+	color: #fea02f;
+}
+.star_rate{
+	margin-bottom: 30px;
+}
+.comment-list{
+	margin-top: 40px;
+}
+.foodSwiper2 img{
+	max-width: 100%;
+}
+
+
+
+@media(max-width: 1199px) and (min-width: 992px){
+	.foodthumbsSlider img{
+		width: 130px;
+		height: 130px;
+	}
+}
+
+@media(max-width: 991px){
+	.food-gallery-slider{
+		max-width: 570px;
+		margin: 0 auto;
+	}
+	.food-content{
+		margin-top: 40px;
+	}
+	.review-ratting{
+		padding: 20px;
+	}
+}
+
+@media(max-width: 767px){
+	.foodthumbsSlider img{
+		width: 100%;
+		height: auto;
+	}
+	.food_name{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.foodthumbsSlider,
+	.food_share,
+	.leave-comment {
+	    margin-top: 15px;
+	}
+	.food_content {
+	    margin: 20px 0;
+	}
+	.price{
+	    font-size: 36px;
+    	line-height: 36px;
+    	margin-bottom: 20px;
+	}
+	.food_detail-tabs{
+		margin: 50px 0 30px 0;
+	}
+	.food_detail-tabs ul {
+	    margin-bottom: 30px;
+	}
+	.detail-tabs-button{
+	    padding: 17px 26px;
+		font-size: 18px;
+    	line-height: 20px;
+	}
+	.review-ratting{
+		margin-top: 30px;
+	}
+	.content {
+	    padding-left: 15px;
+	}
+	.comment .thumbnail img {
+	    width: 80px;
+	    height: 80px;
+	}
+	.content p {
+	    font-size: 16px;
+	    line-height: 22px;
+	    margin-bottom: 10px;
+	}
+	.comment-reply {
+	    margin-left: 40px;
+	}
+}
+@media(max-width: 575px){
+	.f_price-5{
+	    font-size: 20px;
+    	line-height: 20px;
+	}
+	.chefname_review, .va_quality{
+		display: block;
+	}
+	.chefname_review p{
+		margin: 0 0 10px 0;
+	}
+	.va_quality span,
+	.va_quality form{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.va_quality form span,
+	.va_quality form input{
+		height: 45px;
+	    width: 35px;
+	    line-height: 45px;
+	    font-size: 18px;
+	}
+	.add-cart-bnt{
+		font-size: 18px;
+    	line-height: 18px;
+	    padding: 16px 24px;
+		margin: 20px 0 0 0;
+	}
+	.va_quality ,
+	.comment-icon,.food_detail-tabs ul{
+	    margin-bottom: 20px;
+	}
+	.food_detail-tabs ul li{
+		margin: 0 5px;
+	}
+
+}
