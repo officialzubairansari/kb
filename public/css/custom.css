@@ -1,0 +1,60 @@
+/*
+Template Name: Themotics Admin
+Author: Arcotic Solutions
+Website: https://arcoticsolutions.com/
+Contact: support@arcoticsolutions.com
+File: Custom Css File
+*/
+.blog-img {
+    height: 14rem;
+    width: 28rem;
+}
+
+.blog-img-area {
+    height: 14rem;
+    width: 28rem;
+}
+
+.testimonials-card{
+    background-color: var(--secondary-color-light);
+    height: 280px;
+    -webkit-border-radius: 6px;
+}
+
+.breadcrumb-background {
+    background-color: var(--secondary-color-light);
+    padding: 60px 0;
+}
+
+.slider-bg {
+    background-color: var(--secondary-color-light);
+    padding: 60px 0; /* Optional: Adjust padding to create space around content */
+}
+
+.hero-area-two .carousel-item {
+    min-height: 450px; /* Ensure a consistent height for carousel items */
+}
+
+/* WhatsApp button styling */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-btn:hover {
+    background-color: #20c056;
+    text-decoration: none;
+    color: white;
+}

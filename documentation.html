@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en-us">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>SastaFleet | Vehicle Booking/Reservation System</title>
+    <link rel="icon" href="#">
+    <meta name="description" content="SastaFleet, Vehicle Booking/Reservation System">
+    <meta name="keyword" content="SastaFleet, Vehicle, Booking, Reservation, System">
+    <meta name="author" content="Arcotic Solutions">
+    <meta name="copyright" content="Arcotic Solutions">
+    <meta name="date" content="2019-05-17 00:00:00+06:00">
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        html {
+            background-color: #FFFFFF;
+            color: #383838;
+        }
+
+        ::-moz-selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        ::selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        /*  #documenter_sidebar #documenter_logo {
+              background: url(css/img/fav.png) no-repeat 45% 45%;
+              }*/
+
+        a {
+            color: #0000FF;
+        }
+
+        hr {
+            border-top: 1px solid #EBEBEB;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        #documenter_sidebar,
+        #documenter_sidebar ol a {
+            background-color: #DDDDDD;
+            color: #222222;
+        }
+
+        #documenter_sidebar ol a {
+            -webkit-text-shadow: 1px 1px 0px #EEEEEE;
+            -moz-text-shadow: 1px 1px 0px #EEEEEE;
+            text-shadow: 1px 1px 0px #EEEEEE;
+        }
+
+        #documenter_sidebar ol {
+            border-top: 1px solid #AAAAAA;
+        }
+
+        #documenter_sidebar ol a {
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #AAAAAA;
+            color: #444444;
+        }
+
+        #documenter_sidebar ol a:hover {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_sidebar ol a.current {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        .alert {
+            padding: 15px;
+            background-color: #f44336;
+            color: white;
+            opacity: 0.85;
+            transition: opacity 0.6s;
+            margin-bottom: 10px;
+        }
+
+        .alert.success {
+            background-color: #4CAF50;
+        }
+
+        .list_ul ul {
+
+            margin-left: 20px;
+
+        }
+
+        .list_ul li span {
+
+            font-weight: bold !important;
+
+        }
+
+        .list_ul ul ul {
+
+            margin-left: 20px;
+
+        }
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+
+        html {
+            font-size: 101%;
+            font-family: Arial, verdana, arial, sans-serif;
+            font-size: 12px;
+            -webkit-text-size-adjust: none;
+            color: #6F6F6F;
+            background-color: #efefef;
+        }
+
+        body {
+            min-height: 100%;
+            height: auto;
+            width: 100%;
+        }
+
+        footer, header, section {
+            display: block;
+        }
+
+        a {
+            color: #6F6F6F;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        p, ul, ol {
+            margin: 18px 0;
+            line-height: 1.5em;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li.placeholder {
+            height: 70px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        hr {
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            border: 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #aaa;
+            margin: 16px 0;
+            padding: 0;
+        }
+
+        hr.notop {
+            margin-top: 0;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        #documenter_content {
+            position: absolute;
+            right: 18px;
+            left: 218px;
+            padding-left: 10px;
+            padding-bottom: 800px;
+            min-height: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        #documenter_sidebar {
+            -moz-box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+            -webkit-box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+            box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+            position: fixed;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            min-height: 100%;
+            z-index: 100;
+        }
+
+        #documenter_sidebar a {
+            position: relative;
+            z-index: 100;
+        }
+
+        img {
+            border: 0;
+        }
+
+        #documenter_copyright {
+            position: absolute;
+            bottom: 10px;
+            font-size: 10px;
+            right: 15px;
+            width: 200px;
+            text-align: right;
+            z-index: 1
+        }
+
+        noscript {
+            display: block;
+            position: absolute;
+            top: 238px;
+            margin: 0 auto;
+            width: 800px;
+            bottom: 0;
+            z-index: 20;
+        }
+
+        noscript p {
+            width: 800px;
+            font-size: 20px;
+            padding-top: 20px;
+            margin: 0 auto;
+            color: #4D4D4D;
+        }
+
+        .small {
+            font-size: 10px;
+            letter-spacing: 0;
+        }
+
+        /*----------------------------------------------------------------------*/
+        /* Sidebar
+        /*----------------------------------------------------------------------*/
+
+        #documenter_sidebar #documenter_logo {
+            display: block;
+            height: 100%;
+            max-height: 115px;
+            min-height: 70px;
+            width: 200px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        #documenter_sidebar ol {
+            font-size: 12px;
+            font-weight: 700;
+            min-height: 150px;
+            height: 75%;
+            overflow: auto;
+        }
+
+        #documenter_sidebar ol li {
+            text-align: right;
+            padding: 0;
+        }
+
+        #documenter_sidebar ol a {
+            display: block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #aaa;
+            padding: 6px 15px 7px 0;
+            text-align: right;
+        }
+
+        #documenter_sidebar ol a:hover, #documenter_sidebar ol a.current {
+            -webkit-text-shadow: none;
+            -moz-text-shadow: none;
+            text-shadow: none;
+            text-decoration: none;
+        }
+
+        #documenter_sidebar ol li ol {
+            border-top: 0;
+            font-size: 10px;
+            min-height: 10px;
+            height: auto;
+            overflow: auto;
+            margin: 0;
+            display: none;
+        }
+
+        #documenter_sidebar ol li ol li a {
+            display: block;
+            padding: 4px 15px 5px 0;
+            text-align: right;
+        }
+
+        /*----------------------------------------------------------------------*/
+        /* Content
+        /*----------------------------------------------------------------------*/
+
+        #start {
+            height: 800px;
+            padding-top: 200px !important;
+        }
+
+        #start li {
+            list-style: none !important;
+            margin-left: 0 !important;
+        }
+
+        #start p {
+            width: 500px;
+        }
+
+        #documenter_content section {
+            padding-top: 70px;
+        }
+
+        #documenter_content h1 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        #documenter_content h2 {
+            font-size: 20px;
+            margin-bottom: 18px;
+            font-weight: 100;
+        }
+
+        #documenter_content h3 {
+            font-size: 26px;
+            margin: 18px 0 0;
+            font-weight: 100;
+        }
+
+        #documenter_content h4 {
+            font-size: 20px;
+            margin: 18px 0;
+            font-weight: 100;
+        }
+
+        #documenter_content h5 {
+            font-size: 16px;
+            margin: 18px 0;
+            font-weight: 100;
+        }
+
+        #documenter_content h6 {
+            font-size: 14px;
+            margin: 18px 0;
+            font-weight: 100;
+        }
+
+        #documenter_content p {
+            margin: 18px 0;
+        }
+
+        #documenter_content ol li {
+            list-style: decimal;
+            margin-left: 36px;
+        }
+
+        #documenter_content ul li {
+            list-style: square;
+            margin-left: 36px;
+        }
+
+        #documenter_content dl {
+        }
+
+        #documenter_content dl dt {
+            padding-top: 12px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        #documenter_content dl dd {
+            padding-top: 3px;
+            margin-left: 18px;
+        }
+
+        #documenter_content table {
+            border-collapse: collapse;
+        }
+
+        #documenter_content table th {
+            font-weight: 700;
+        }
+
+        #documenter_content table th, #documenter_content table td {
+            padding: 3px;
+            text-align: left;
+        }
+
+        #documenter_content code, #documenter_content pre {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+        }
+
+        #documenter_content .warning {
+            padding: 10px 10px 10px 30px;
+            border: 1px solid #D5D458;
+            background-color: #F0FEB1;
+            background-image: url(img/warning.png);
+            background-repeat: no-repeat;
+            background-position: 8px 11px;
+        }
+
+        #documenter_content .info {
+            padding: 10px 10px 10px 30px;
+            border: 1px solid #6AB3FF;
+            background-color: #A3D0FF;
+            background-image: url(img/info.png);
+            background-repeat: no-repeat;
+            background-position: 8px 11px;
+        }
+
+        #documenter_content pre {
+            background-image: url(img/pre_bg.png);
+            line-height: 19px;
+        }
+
+        .biu {
+            font-style: italic;
+            font-weight: bold !important;
+            text-decoration: underline;
+            padding-top: 15px;
+        }
+
+
+        /*----------------------------------------------------------------------*/
+        /* Print Styles
+        /*----------------------------------------------------------------------*/
+
+        @media print {
+            * {
+                background: transparent !important;
+                color: black !important;
+                text-shadow: none !important;
+                filter: none !important;
+                -ms-filter: none !important;
+            }
+
+            /* Black prints faster: sanbeiji.com/archives/953 */
+            a, a:visited {
+                color: #444 !important;
+                text-decoration: underline;
+            }
+
+            a[href]:after {
+                content: " (" attr(href) ")";
+            }
+
+            abbr[title]:after {
+                content: " (" attr(title) ")";
+            }
+
+            .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+                content: "";
+            }
+
+            /* Don't show links for images, or javascript/internal links */
+            pre, blockquote {
+                border: 1px solid #999;
+                page-break-inside: avoid;
+            }
+
+            thead {
+                display: table-header-group;
+            }
+
+            /* css-discuss.incutio.com/wiki/Printing_Tables */
+            tr, img {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                margin: 0.5cm;
+            }
+
+            p, h2, h3 {
+                orphans: 3;
+                widows: 3;
+            }
+
+            h2, h3 {
+                page-break-after: avoid;
+            }
+
+            hr {
+                border-top: 1px solid #000 !important;
+                border-bottom: 0 !important;
+            }
+
+            #documenter_sidebar {
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                position: absolute;
+                left: 10px;
+                top: 0;
+                width: 100%;
+                margin-top: 500px;
+            }
+
+            #documenter_sidebar ol:before {
+                content: "Table of Contents";
+            }
+
+            #documenter_sidebar ol {
+                border: 0 !important;
+            }
+
+            #documenter_sidebar ol li {
+                border: 0 !important;
+                text-align: left;
+            }
+
+            #documenter_sidebar ol li a {
+                border: 0 !important;
+                text-align: left;
+                padding: 4px;
+            }
+
+            #documenter_sidebar ol li a:hover {
+                border: 0 !important;
+            }
+
+            #documenter_sidebar #documenter_logo {
+                display: none;
+            }
+
+            #documenter_sidebar #documenter_copyright {
+                display: none;
+            }
+
+            #documenter_content {
+                left: 10px;
+            }
+
+            #start {
+                margin-bottom: 300px;
+            }
+
+            #documenter_content .warning {
+                background-image: url(img/warning.png) !important;
+                background-repeat: no-repeat !important;
+                background-position: 8px 11px !important;
+            }
+
+            #documenter_content .info {
+                background-image: url(img/info.png) !important;
+                background-repeat: no-repeat !important;
+                background-position: 8px 11px !important;
+            }
+
+            #documenter_content pre {
+                background-image: url(img/pre_bg.png) !important;
+                line-height: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div id="documenter_sidebar">
+    <a href="#start" id="documenter_logo"><img style="width: 150px;margin-left: 22px;margin-top: 45px;" src="https://sastafleet.arcoticsolutions.com/logo/logo_pHtM871H.png"></a>
+    <ol id="documenter_nav">
+        <li>
+            <a href="#start">Start</a>
+        </li>
+        <li>
+            <a href="#terms_condition">Terms & Conditions</a>
+        </li>
+        <li>
+            <a href="#product_features">Product Features</a>
+        </li>
+        <li>
+            <a href="#technology_used">Technologies Used</a>
+        </li>
+        <li>
+            <a href="#requirements">Requirements</a>
+        </li>
+        <li>
+            <a href="#setup_installation">Setup & Installation</a>
+        </li>
+        <li>
+            <a href="#troubleshot">Troubleshot</a>
+        </li>
+    </ol>
+</div>
+<div id="documenter_content">
+    <section id="start">
+        <h1>SastaFleet</h1>
+        <h2>Version:1.0.0</h2>
+        <hr>
+        <ul>
+            <li>Created: 28/07/2024</li>
+            <li>latest Update: 28/07/2024</li>
+            <li>By: Arcotic Solutions</li>
+            <li>
+                <a href="https://arcoticsolutions.com"></a>
+            </li>
+            <li>Email:
+                <a href="mailto:envato@arcoticsolutions.com">envato@arcoticsolutions.com</a>
+            </li>
+            <li>For Bug, Pre-sale Questions, Feedback &amp; Suggestion send Email:
+                <a href="mailto:envato@arcoticsolutions.com">envato@arcoticsolutions.com</a> with Subject "Envato -
+                SastaFleet"
+            </li>
+        </ul>
+    </section>
+    <section id="terms_condition">
+        <h3>Terms & Conditions</h3>
+        <hr class="notop">
+        <ul>
+            <li>
+                <b>License and Use: </b>License Grant: Upon purchase, you are granted a non-exclusive, non-transferable
+                license to use the SastaFleet in accordance with the terms set forth
+                by Envato Market (CodeCanyon).
+            </li>
+            <li>
+                <b>Permitted Use: </b>You may use the system for personal or commercial projects, provided that you
+                comply with the terms of this license.
+            </li>
+            <li>
+                <b>Prohibited Use: </b>Redistribution, sublicensing, or resale of the system, in whole or in part, is
+                strictly prohibited.
+            </li>
+            <li>
+                <b>Custom Modifications: </b>You may modify the source code for personal or client projects. You are
+                allowed to customize the system to meet your specific needs. However, any modifications are subject to
+                the original license terms. We are not responsible for any damages, crashes, or issues arising from
+                custom modifications made to the system.
+            </li>
+            <li>
+                <b>Updates: </b>We provide updates to the system to ensure compatibility with new versions of Laravel
+                and to address bugs or security issues.
+            </li>
+            <li>
+                <b>Support: </b>Support is provided as per the Envato Market guidelines. Support includes bug fixes and
+                assistance with the original functionality of the system but does not cover customizations or
+                third-party integrations.
+            </li>
+            <li>
+                <b>Images & Media: </b>Images and other media used/showed in demo are not included in licensed/purchased product.
+            </li>
+
+        </ul>
+    </section>
+    <section id="product_features">
+        <h3>Product Features</h3>
+        <hr class="notop">
+        <ul>
+            <li>
+                <b>Frontend - Website</b>
+                <ul>
+                    <li>Vehicle reservation/booking.</li>
+                    <li>vehicle reservation/booking for custom routes.</li>
+                    <li>Send message or contact via form in website.</li>
+                    <li>Pages: Vehicle Categories,Blogs/Articles, FaQs, About us & Contact Us.</li>
+                    <li>Sections: Slider, Highlights, Vehicles, Testimonial, All blogs & Recent blogs.</li>
+                </ul>
+            </li>
+            <li>
+                <b>Backend - System Management</b>
+                <ul>
+                    <li>Secured authentication (Login).</li>
+                    <li>Dashboard with summarized overview.</li>
+                    <li>Reservation/booking Management. (New reservation, confirmation, completion, cancellation)</li>
+                    <li>Send WhatsApp message and email to customers.</li>
+                    <li>Customers Management.</li>
+                    <li>Vehicles Management.</li>
+                    <li>Vehicle categories Management.</li>
+                    <li>Routes Management.</li>
+                    <li>Fares Management.</li>
+                    <li>Drivers Management.</li>
+                    <li>Messages and queries (submitted via website) management.</li>
+                    <li>Settings.
+                        <ul>
+                            <li>General Settings</li>
+                            <li>WhatsApp message template</li>
+                            <li>Email template</li>
+                            <li>Company information</li>
+                        </ul>
+                    </li>
+                    <li>Website (frontend) Management.
+                        <ul>
+                            <li>Page management</li>
+                            <li>Section management (Blogs, FaQs, Testimonials, Sliders, Highlights)</li>
+                            <li>Site colors</li>
+                        </ul>
+                    </li>
+                    <li>Users Management.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="technology_used">
+        <h3>Technologies Used</h3>
+        <hr class="notop">
+        <ul>
+            <li>
+                <b>Programming Language: </b>PHP - The core programming language used for the development of SastaFleet,
+                providing server-side scripting capabilities.
+            </li>
+            <li>
+                <b>Framework: </b>Laravel - The PHP framework utilized for building the application, known for its
+                elegant syntax and robust features.
+            </li>
+            <li>
+                <b>Database: </b>MySQL - The relational database management system used to store and manage the system’s
+                data.
+            </li>
+            <li>
+                <b>Mail Server: </b>SMTP - The Simple Mail Transfer Protocol (SMTP) is used for sending emails from the
+                application, ensuring reliable email delivery.
+            </li>
+            <li>
+                <b>Frontend Technologies: </b>1) HTML/CSS - For structuring and styling the web pages. 2) JavaScript -
+                To enhance user interactions and dynamic content on the client side. 3) Boostrap - Boostrap v5 used for
+                styling in the project.
+            </li>
+        </ul>
+    </section>
+    <section id="requirements">
+        <h3>Requirements</h3>
+        <hr class="notop">
+        <ul>
+            <li>
+                <b>PHP Version (8.2.0 required)</b>
+            </li>
+            <li>
+                <b>Mysql: MySQL 5.7 and MySQL 8 (both are supported)</b>
+            </li>
+            <li>
+                <b>PHP Extensions: </b>cType, cURL, DOM, FileInfo, Filter, Hash, Mbstring, OpenSSL, PCRE, PDO,
+                PDO_MySQL, Session, Tokenizer, XML, XMLWriter, JSON, BCMath and GD.
+            </li>
+            <li>
+                <b>Folder Permissions: </b>1) public_html/storage/framework/ (Permission to 775). 2)
+                public_html/storage/logs/ (Permission to 775). 3) public_html/bootstrap/cache/ (Permission to 775).
+            </li>
+        </ul>
+    </section>
+    <section id="setup_installation">
+        <h3>Setup & Installation</h3>
+        <hr class="notop">
+        <ul>
+            <p style="color: red">For paid installation support please reach us at WhatsApp <a
+                    href="https://api.whatsapp.com/send/?phone=0923377525911">+923377525911</a> or email <a
+                    href="mailto:envato@arcoticsolutions.com">envato@arcoticsolutions.com</a></p>
+            <li>
+                <b>Step 1</b>
+                <ul>
+                    <li>Extract and upload the contents of the project (usually .zip) directly into the root directory
+                        of your hosting server. For example, this could be /var/www/html/ or /home/username/public_html,
+                        depending on the root folder of your domain or subdomain. This will make your website accessible
+                        at https://yourdomain.com
+                    </li>
+                    <li>Keep in mind that everything within the public folder is accessible to anyone. Avoid placing any
+                        sensitive information there.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Step 2</b>
+                <ul>
+                    <li>Prepare database: After uploading all the files and ensuring that the domain name is correctly
+                        configured, create a MySQL database and an appropriate user if you don't already have one. You
+                        can create the database manually using your phpMyAdmin panel or use the phpMyAdmin Wizard in
+                        your cPanel to set it up.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Step 3</b>
+                <ul>
+                    <li> You are now prepared to initiate the installation process. Enter https://yourdomain.com in your
+                        browser's address bar and press Enter. There you will see installation page and proceed
+                        accordingly.
+                    </li>
+                    <p style="color: red">If you got error (403 Forbidden) while accessing your site just after
+                        uploading files on server, read troubleshot #1 in troubleshot section.</p>
+                </ul>
+            </li>
+            <li>
+                <b>Step 4 (Final)</b>
+                <ul>
+                    <li>Once installation will complete, you will be redirected to administrator login.</li>
+                    <li>Default credentials for login are: <br>Username: superadmin <br>Password: password</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="troubleshot">
+        <h3>Troubleshot</h3>
+        <hr class="notop">
+        <ul>
+            <li>
+                <b>Troubleshot #1</b>
+                <ul>
+                    <li>If you got error (403 Forbidden) accessing the website (just after uploading project content and
+                        files on server), try to access website with public directly url (i.e yourdomain.com/public). If
+                        you see there is no error then go back to root directory of your project and create a .htaccess
+                        file and put this code:
+                    </li>
+                    <pre style="margin-top: 20px; margin-left: 35px;"><code>&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+&lt;/IfModule&gt;
+</code></pre>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
