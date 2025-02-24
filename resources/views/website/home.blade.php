@@ -14,10 +14,10 @@
                             <div class="big-banner" style="background-image: url(assets/images/slider/s-1.jpg);"></div>
                             <div class="hero-overlay"></div>
                             <div class="slider_shape_img1">
-                                <img src="{{ asset('website/images/slider/shape-img1.svg') }}" alt="shape-img1 img">
+                                <img src="{{ asset('website/website/images/slider/shape-img1.svg') }}" alt="shape-img1 img">
                             </div>
                             <div class="slider_shape_img2">
-                                <img src="{{ asset('website/images/slider/shape-img2.svg') }}" alt="shape-img2 img">
+                                <img src="{{ asset('website/website/images/slider/shape-img2.svg') }}" alt="shape-img2 img">
                             </div>
                             <div class="container">
                                 <h5 class="d-none">Hidden</h5>
@@ -36,10 +36,10 @@
                             <div class="big-banner" style="background-image: url(assets/images/slider/s-2.jpg);"></div>
                             <div class="hero-overlay"></div>
                             <div class="slider_shape_img1">
-                                <img src="{{ asset('website/images/slider/shape-img1.svg') }}" alt="shape-img1 img">
+                                <img src="{{ asset('website/website/images/slider/shape-img1.svg') }}" alt="shape-img1 img">
                             </div>
                             <div class="slider_shape_img2">
-                                <img src="{{ asset('website/images/slider/shape-img2.svg') }}" alt="shape-img2 img">
+                                <img src="{{ asset('website/website/images/slider/shape-img2.svg') }}" alt="shape-img2 img">
                             </div>
                             <h4 class="d-none">Hidden</h4>
                             <h5 class="d-none">Hidden</h5>
@@ -99,7 +99,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 250</span>
-                                            <img src="assets/images/menu/salad.jpg" alt="Salad dish" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Chicken-Biryani-Recipe.jpg') }}" alt="Salad dish" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 400</span>
-                                            <img src="assets/images/menu/chicken-biryani.jpg" alt="Chicken Biryani" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Chicken-Biryani-Recipe.jpg') }}" alt="Chicken Biryani" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -123,7 +123,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 700</span>
-                                            <img src="assets/images/menu/finger.jpg" alt="Finger Chicken" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Chicken-Biryani-Recipe.jpg') }}" alt="Finger Chicken" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 350</span>
-                                            <img src="assets/images/menu/chicken-biryani.jpg" alt="Chicken Biryani" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Beef-Pulao.webp') }}" alt="Chicken Biryani" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 450</span>
-                                            <img src="assets/images/menu/finger.jpg" alt="Finger Chicken" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Beef-Pulao.webp') }}" alt="Finger Chicken" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -163,7 +163,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 850</span>
-                                            <img src="assets/images/menu/orange-juice.jpg" alt="Orange Juice" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/Beef-Pulao.webp') }}" alt="Orange Juice" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -179,7 +179,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 220</span>
-                                            <img src="assets/images/menu/salad.jpg" alt="Salad dish" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/IMG_1174-500x500.jpg') }}" alt="Salad dish" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -191,7 +191,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 300</span>
-                                            <img src="assets/images/menu/chicken-biryani.jpg" alt="Chicken Biryani" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/IMG_1174-500x500.jpg') }}" alt="Chicken Biryani" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -203,7 +203,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 550</span>
-                                            <img src="assets/images/menu/finger.jpg" alt="Finger Chicken" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/IMG_1174-500x500.jpg') }}" alt="Finger Chicken" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -219,7 +219,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 80</span>
-                                            <img src="assets/images/menu/salad.jpg" alt="Salad dish" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/cola-next.webp') }}" alt="Salad dish" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -231,7 +231,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 80</span>
-                                            <img src="assets/images/menu/chicken-biryani.jpg" alt="Chicken Biryani" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/fuzzup.jpg') }}" alt="Chicken Biryani" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -243,7 +243,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 50</span>
-                                            <img src="assets/images/menu/finger.jpg" alt="Finger Chicken" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/abe-dubai.webp') }}" alt="Finger Chicken" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -255,7 +255,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 100</span>
-                                            <img src="assets/images/menu/orange-juice.jpg" alt="Orange Juice" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/abe-dubai.webp') }}" alt="Orange Juice" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -267,7 +267,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 50</span>
-                                            <img src="assets/images/menu/pigeon-burger.jpg" alt="Le Pigeon Burger" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/salad.jpg') }}" alt="Le Pigeon Burger" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
@@ -279,7 +279,7 @@
                                         </div>
                                         <div class="food-img-price">
                                             <span class="f_price">Rs 50</span>
-                                            <img src="assets/images/menu/broccoli-rabe.jpg" alt="Broccoli Rabe" class="dish-image" width="170" height="170">
+                                            <img src="{{ asset('website/images/menu/raita.jpg') }}" alt="Broccoli Rabe" class="dish-image" width="170" height="170">
                                         </div>
                                     </a>
                                 </div>
